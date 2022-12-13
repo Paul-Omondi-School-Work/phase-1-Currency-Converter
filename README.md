@@ -1,9 +1,9 @@
 # phase-1-DEV-CON-BLOG
 
-## Project. Developers Corner(DEV-CON) is blogging site to help amateur developers begin their software journey by providing them with good content.
+## Project. This is a currency converter that changes your currency to the desired country currency you want.
 
 Project Description
-DEV-CON is a website that is built to act as a blog site. The website will allow one to upload,edit and delete articles at their own convenience.
+This webApp takes in currencies and changes them to the form a user desires based on different currencies from different countries. 
 
 ## Technologies
 
