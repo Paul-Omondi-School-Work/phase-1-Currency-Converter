@@ -1,9 +1,9 @@
-# phase-1-DEV-CON-BLOG
+# phase-1-Currency Converter
 
 ## Project. This is a currency converter that changes your currency to the desired country currency you want.
 
 Project Description
-This webApp takes in currencies and changes them to the form a user desires based on different currencies from different countries. 
+This webApp takes in currencies and changes them to the form a user desires based on different currencies from different countries.
 
 ## Technologies
 
