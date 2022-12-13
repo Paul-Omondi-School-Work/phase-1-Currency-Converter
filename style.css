@@ -1,0 +1,22 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .currency{
+padding: 20px;
+  }
+  
+  .converter{
+padding: 20px;
+  }
+  .container{
+    border: 2px solid red;
+    width: 30%;
+    height: 60%;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-image: url(https://images.theconversation.com/files/481362/original/file-20220826-10690-nguhqg.jpg?ixlib=rb-1.1.0&rect=224%2C71%2C5766%2C3574&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip);
+  }

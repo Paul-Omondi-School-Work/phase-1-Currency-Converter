@@ -12,7 +12,7 @@ fetch ('https://currency-exchange.p.rapidapi.com/listquotes',{
    })
    .then ((res)=>res.json())
    .then ((data)=>{
-
+//----create an option list---
 
 
 console.log(data)

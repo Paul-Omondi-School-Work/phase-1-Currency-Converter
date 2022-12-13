@@ -3,7 +3,7 @@
 ## Project. This is a currency converter that changes your currency to the desired country currency you want.
 
 Project Description
-This webApp takes in currencies and changes them to the form a user desires based on different currencies from different countries.
+This webApp takes in currencies and changes them to the form a user desires based on different currencies from different countries. It is live and gives feedback based on source and destination quote.
 
 ## Technologies
 
