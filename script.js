@@ -2,7 +2,7 @@
 let select = document.querySelector('#select')
 let secondSelect= document.querySelector('.select')
 let amount = document.querySelector('#amount')
-let amount2 = document.querySelector('.class')
+let amount2 = document.querySelector('.amount')
 // exchange rate calculation 
 
 
@@ -82,15 +82,17 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 
 		secondSelect.addEventListener('change',(e)=>{
 
+			let amount2Value = amount2.value
 			if(
-				amountValue =='' || amountValue=='0'
+				amount2Value =='' || amount2Value=='0'
 			){
-				amountValue='1'
-				amount.value ='1'
+				amount2Value='1'
+				amount2.value ='1'
 			}
 			let secondAmount = amount2.value
-			totalEx = (amount2*response)
-			amount2.replaceWith(totalExchange)
+			let mutiplier = response
+			totalEx = (secondAmount*mutiplier)
+			amount2.replaceWith(totalEx) 
 		})
 		 
 	
