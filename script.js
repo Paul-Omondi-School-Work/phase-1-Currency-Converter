@@ -30,29 +30,8 @@ fetch('https://currency-exchange.p.rapidapi.com/listquotes', options)
 	optionList.innerHTML = `<option value="${data[key]}">${data[key]}</option>`
     select.appendChild(optionList)
 	secondSelect.appendChild(choiceList)
-
-
-
-
-
-	
-	
-
 	  }
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-		//console.log(data)
+			//console.log(data)
 })
 
 //----fetch exchange rate data------------
@@ -74,7 +53,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 		//------add exchange rate to event listener------
 		let exchangeRate = response
 		let totalExchange = (amountValue * exchangeRate)
-		amount.replaceWith(totalExchange)
+		amount2.replaceWith(totalExchange)
 		
 		})
 
@@ -92,7 +71,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 			let secondAmount = amount2.value
 			let mutiplier = response
 			totalEx = (secondAmount*mutiplier)
-			amount2.replaceWith(totalEx) 
+			amount.replaceWith(totalEx) 
 		})
 		 
 	
@@ -104,7 +83,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 
 
 
-   //})
+
 	
 	
 	
