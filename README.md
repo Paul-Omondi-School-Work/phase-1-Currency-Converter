@@ -18,10 +18,10 @@ Dependencies
 libraries, OS version, needed before installing program.
 Atleast Windows 7 *Google Chrome Version 107.0.5304.87 (Official Build) (64-bit)
 Installing
-Download this program at github at (https://github.com/Ochieng23/phase-1-DEV-CON-BLOG) *No modifications needed to be made to files/folders
+Download this program at github at (https://github.com/Paul-Omondi-School-Work/phase-1-Currency-Converter) *No modifications needed to be made to files/folders
 Executing program
 How to run the program
-click on the github link (https://github.com/Ochieng23/phase-1-DEV-CON-BLOG)
+click on the github link (https://github.com/Paul-Omondi-School-Work/phase-1-Currency-Converter)
 clone the repo into your machine
 Open the folder and open the index.html file with chrome.
 
