@@ -60,7 +60,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 
 
 		secondSelect.addEventListener('change',(e)=>{
-
+       //-----incase the value is empty
 			let amount2Value = amount2.value
 			if(
 				amount2Value =='' || amount2Value=='0'
@@ -73,10 +73,27 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 			totalEx = (secondAmount*mutiplier)
 			amount.replaceWith(totalEx) 
 		})
+		//--------- event listener that will change value on change on text-----
+		/*amount.addEventListener('change',(e)=>{
+        console.log('touched')
+		let amountE = document.querySelector('.amount').value
+		let mutP = response
+		tEx = (amountE*mutP)
+         amount2.innerHTML=tEx
+		})
+		amount2.addEventListener('change',(e)=>{
+      console.log('awoooh')
+	  let count = document.querySelector('#amount')
+	  let utP = response
+	  zEx = (count*utP)
+	  amount.replaceWith(zEx)})*/
+	  //---------------
 		 
 	
 		   console.log(response)
-	   })
+	   });
+
+	
 
 
 

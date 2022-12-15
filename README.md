@@ -9,7 +9,7 @@ This webApp takes in currencies and changes them to the form a user desires base
 
 HTML
 CSS
-BOOTSTRAP 4
+BOOTSTRAP 5
 JAVASCRIPT
 
 ## Getting Started
@@ -24,6 +24,11 @@ How to run the program
 click on the github link (https://github.com/Paul-Omondi-School-Work/phase-1-Currency-Converter)
 clone the repo into your machine
 Open the folder and open the index.html file with chrome.
+Run the API from (https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0)
+## How to use 
+1. When you open the index.html file in your browser you will see two options each with drop down options to place the amount you want to change in currency.
+2. Place the amount on the prompt first before choosing the currency you want to change it from.
+3. Choose the currency and it will appear on the prompt below the upper one that you used to place the amount. 
 
 ## Help
 
