@@ -3,11 +3,8 @@ let select = document.querySelector('#select')
 let secondSelect= document.querySelector('.select')
 let amount = document.querySelector('#amount')
 let amount2 = document.querySelector('.amount')
-// exchange rate calculation 
-
-
-
-
+let container = document.querySelector('.containers')
+//------fetch data from the payload-----
 const options = {
 	method: 'GET',
 	headers: {
@@ -30,6 +27,8 @@ fetch('https://currency-exchange.p.rapidapi.com/listquotes', options)
 	optionList.innerHTML = `<option value="${data[key]}">${data[key]}</option>`
     select.appendChild(optionList)
 	secondSelect.appendChild(choiceList)
+
+    
 	  }
 			//console.log(data)
 })
@@ -38,7 +37,7 @@ fetch('https://currency-exchange.p.rapidapi.com/listquotes', options)
 fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0', options)
 	   .then(response => response.json())
 	   .then(response =>{
-		select.addEventListener('change',(e)=>{
+		amount.addEventListener('change',(e)=>{
 			e.preventDefault()
 			console.log('clicked')
 			
@@ -59,7 +58,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 
 
 
-		secondSelect.addEventListener('change',(e)=>{
+		amount2.addEventListener('change',(e)=>{
        //-----incase the value is empty
 			let amount2Value = amount2.value
 			if(
@@ -73,23 +72,15 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 			totalEx = (secondAmount*mutiplier)
 			amount.replaceWith(totalEx) 
 		})
-		//--------- event listener that will change value on change on text-----
-		/*amount.addEventListener('change',(e)=>{
-        console.log('touched')
-		let amountE = document.querySelector('.amount').value
-		let mutP = response
-		tEx = (amountE*mutP)
-         amount2.innerHTML=tEx
-		})
-		amount2.addEventListener('change',(e)=>{
-      console.log('awoooh')
-	  let count = document.querySelector('#amount')
-	  let utP = response
-	  zEx = (count*utP)
-	  amount.replaceWith(zEx)})*/
-	  //---------------
+		
+		//-----creating the trigger button 
 		 
-	
+	    let triggerButton = document.createElement('button')
+	    container.appendChild(triggerButton)
+		let text = document.createTextNode('CHANGE CURRENCY')
+		triggerButton.appendChild(text)
+		triggerButton.style.margin = '20px'
+
 		   console.log(response)
 	   });
 
