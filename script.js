@@ -80,6 +80,8 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 		let text = document.createTextNode('CHANGE CURRENCY')
 		triggerButton.appendChild(text)
 		triggerButton.style.margin = '20px'
+		
+		
 
 		   console.log(response)
 	   });
