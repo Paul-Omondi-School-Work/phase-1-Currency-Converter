@@ -4,7 +4,7 @@ let secondSelect= document.querySelector('.select')
 let amount = document.querySelector('#amount')
 let amount2 = document.querySelector('.amount')
 let container = document.querySelector('.containers')
-//------fetch data from the payload-----
+//------fetch data from the API-----
 const options = {
 	method: 'GET',
 	headers: {
@@ -16,7 +16,7 @@ const options = {
 fetch('https://currency-exchange.p.rapidapi.com/listquotes', options)
 	.then(response => response.json())
 	.then(data => {
-    //---create option lists using server data----
+    //---create option lists using API data----
     
     for(const key in data){
 	console.log(`${key}: ${data[key]}`)
@@ -30,7 +30,7 @@ fetch('https://currency-exchange.p.rapidapi.com/listquotes', options)
 
     
 	  }
-			//console.log(data)
+			
 })
 
 //----fetch exchange rate data------------
@@ -39,7 +39,7 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 	   .then(response =>{
 		amount.addEventListener('change',(e)=>{
 			e.preventDefault()
-			console.log('clicked')
+			//console.log('clicked')
 			
 			let amountValue = amount.value
 		//---incase the amount value is empty-----
@@ -80,10 +80,8 @@ fetch('https://currency-exchange.p.rapidapi.com/exchange?from=SGD&to=MYR&q=1.0',
 		let text = document.createTextNode('CHANGE CURRENCY')
 		triggerButton.appendChild(text)
 		triggerButton.style.margin = '20px'
+	
 		
-		
-
-		   console.log(response)
 	   });
 
 	
